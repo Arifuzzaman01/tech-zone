@@ -1,9 +1,12 @@
+// import AuthButtons from "@/app/components/AuthButtons";
 import Link from "next/link";
 import React from "react";
+import LoginButton from "./LoginButton";
 
 const Navbar = () => {
     const navLink = <>
-    <Link href="/">Home</Link>
+    <Link className="mx-1 font-bold" href="/">Home</Link>
+    <Link className="mx-1 font-bold" href="/addProduct">Add Product</Link>
     </>
   return (
     <div>
@@ -42,7 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <LoginButton/>
         </div>
       </div>
     </div>
