@@ -13,7 +13,7 @@ const ProductPages = async () => {
   return (
     <div className="my-10 max-w-6xl mx-auto">
       <h1 className="text-5xl font-bold text-center my-5">All Products</h1>
-      <div className="md: grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-5 md:mx-0 lg:grid-cols-4 gap-5">
         {sliceData.map((singleData) => (
           <div
             key={singleData._id}
