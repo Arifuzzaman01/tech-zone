@@ -7,7 +7,8 @@ const ProductPages = async () => {
   const productCollection = dbConnect(collectionsNameObj.productsCollection);
   const data = await productCollection.find({}).toArray();
   // console.log(data);
-  const sliceData = data.slice(0, 12);
+  const newData = data.reverse()
+  const sliceData = newData.slice(0, 12);
   console.log(sliceData);
   return (
     <div className="my-10 max-w-6xl mx-auto">

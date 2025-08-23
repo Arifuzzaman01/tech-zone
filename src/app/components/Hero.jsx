@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import bannerImg from "../../../public/shopping.jpg"
 
 const Hero = () => {
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
           {/* Right Image */}
           <div className="flex justify-center md:justify-end">
             <Image
-              src="https://i.ibb.co.com/V0gyxXW5/boxing.jpg"
+              src={bannerImg}
               alt="Hero Image"
               width={500}
               height={400}
